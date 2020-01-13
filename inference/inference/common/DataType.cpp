@@ -19,7 +19,7 @@ const std::string dataTypeString(DataType type) {
   static const std::unordered_map<DataType, const char*> typeToName = {
       {DataType::UNINITIALIZED, "UNINITIALIZED"},
       {DataType::FLOAT, "FLOAT"},
-      {DataType::FLOAT16, "FLOAT16"},
+      {DataType::FLOAT16, "FLOAT16"}
   };
   auto itr = typeToName.find(type);
   if (itr == typeToName.end()) {
@@ -35,7 +35,7 @@ int dataTypeNumberOfBytes(DataType type) {
   static const std::unordered_map<DataType, int> typeToSize = {
       {DataType::UNINITIALIZED, 0},
       {DataType::FLOAT, 4},
-      {DataType::FLOAT16, 2},
+      {DataType::FLOAT16, 2}
   };
   auto itr = typeToSize.find(type);
   if (itr == typeToSize.end()) {

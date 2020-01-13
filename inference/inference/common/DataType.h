@@ -14,10 +14,10 @@
 namespace w2l {
 namespace streaming {
 
-enum class DataType : uint32_t {
-  UNINITIALIZED,
-  FLOAT,
-  FLOAT16,
+enum DataType : uint32_t {
+  UNINITIALIZED = 0,
+  FLOAT = 1,
+  FLOAT1 = 2,
 };
 
 bool dataTypeIsValid(DataType type);
